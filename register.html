@@ -1,185 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-
     <title>
         Registration
     </title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </head>
+
 <body>
     <div id="wrapper">
         <header id="logo">
-            
+
         </header>
-    <div class="sidenav">
-        <!-- for the side bar ,just plain text ,relative to the images (menu inside menu, drop down action) -->
-        <button class="dropbtn">Computer</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <button class="dropbtn">Console</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <button class="dropbtn">Mobile </button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <button class="dropbtn">Appealing</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <button class="dropbtn">Hats/Caps</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        
-        <button class="dropbtn">Cosplay </button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <button class="dropbtn">Colectibles</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <button class="dropbtn">Tv-Series and HQ</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <button class="dropbtn">Gaming Decorations</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>             
-        
-    </div>    
-    <div id="maincontent">
-        <!-- the menu here to go mainpage, register, contact, FAQ -->
-        <div class="topnav">
-            <a href="#news.html">News/Events</a>
-            <a href="home.html">Store</a>
-            <a class="active" href="register.html">Become a member</a>
-            <a href="#contact">Contact Us!</a>
-            <a href="calculator.html">Calculator</a>
-        </div>
-        <!-- Here will be my main content display,i guess I will have to break it down in small php to make it happen-->
-        <section id="container">
-           
-            <!-- The formulary is the same I submited before , I only added new fields that was necessary for the person nummer and zip post , also deactive the automatic validatation 
+        <nav class="nav-extended deep-orange">
+            <div class="nav-wrapper" style="display: flex; justify-content: center;">
+                <ul class="center">
+                    <li class="waves-effect waves-light active">
+                        <a href="home.html">Store</a>
+                    </li>
+                    <li class="waves-effect waves-light">
+                        <a href="#news.html">News/Events</a>
+                    </li>
+                    <li class="waves-effect waves-light">
+                        <a href="register.html">Become a member</a>
+                    </li>
+                    <li class="waves-effect waves-light">
+                        <a href="#contact.html">Contact Us!</a>
+                    </li>
+                    <li class="waves-effect waves-light">
+                        <a href="calculator.html">Calculator</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab">
+                        <a href="#" class="btn-flat" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">computer</i>
+                            <span style="margin-left: 0.5rem;">Computer</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">games</i>
+                            <span style="margin-left: 0.5rem;">Console</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">smartphone</i>
+                            <span style="margin-left: 0.5rem;">Mobile</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">tag_faces</i>
+                            <span style="margin-left: 0.5rem;">Apparel</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">toys</i>
+                            <span style="margin-left: 0.5rem;">Hats/Caps</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">accessibility_new</i>
+                            <span style="margin-left: 0.5rem;">Cosplay</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">graphic_eq</i>
+                            <span style="margin-left: 0.5rem;">Collectibles</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">tv</i>
+                            <span style="margin-left: 0.5rem;">TV-Series</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#" style="display: flex; justify-content: center;
+                            align-items: center; padding: 0.3rem; margin: 0;">
+                            <i class="material-icons">local_play</i>
+                            <span style="margin-left: 0.5rem;">Game Decorations</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="maincontent" class="grey darken-3">
+            <!-- Here will be my main content display,i guess I will have to break it down in small php to make it happen-->
+            <section id="container">
+
+                <!-- The formulary is the same I submited before , I only added new fields that was necessary for the person nummer and zip post , also deactive the automatic validatation 
             Removind the "required" -->
-            <h3>Be a Member!</h3>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Become a Member!</span>
+                    <form name="form" onsubmit="return validateForm();" method="post" action="register.html">
 
-            <div id ="formulary">
-                <form name= "form" onsubmit="return validateForm();" method="post" action="register.html"> 
-                                      
-                
-                <label for="name">Full Name:</label>
-                <input name="name" type="text" id="name" placeholder="Your name"  >
-                <p></p>
-                <!-- I left some space for the 12 digits of the PN but some cases people use only 10 , I will try to make it possible on the validation,but i use 15 spaces in case some ppl use the "/" or spaces -->
-                <label for="person">Personal Number:</label>
-                <input name="person" type="number" id="person" maxsize="15" placeholder="YYYY/MM/DD/XXXX"  >
-                <p></p>
-                <label for="password">Password:</label>
-                <input name="password" type="password" id="password" placeholder="Password">
-                <input name="repassword" type="password" id="repassword" placeholder="re-type Password">
-                         
-                <p></p>
+                            <div class="input-field">
+                                <input required name="name" type="text" id="name">
+                                <label for="name">Full Name:</label>
+                            </div>
+                            <div class="input-field">
+                                <input required name="person" type="number" id="person" pattern="[0-9]{10}">
+                                <label for="person">Personnummer (YYMMDDXXXX):</label>
+                            </div>
+                            <div class="input-field">
+                                <label for="password">Password:</label>
+                                <input required name="password" type="password" id="password">
+                                <input required name="repassword" type="password" id="repassword" placeholder="re-type Password">
+                            </div>
+                            <div class="input-field">
+                                <label for="email">Email:</label>
+                                <input name="email" type="email" id="email">
+                            </div>
 
-                <label for="email">Email:</label>
-                <input name= "email" type="email" id="email" placeholder="Your Email@host.com" >
-                <p></p>
-                <label for="phone">Phone:</label>
-                <input type="number" placeholder="Mobile Number" id="phone" name="phone" >
+                            <div class="input-field">
+                                <label for="phone">Phone Number:</label>
+                                <input type="number" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="input-field">
+                                <label for="address">Address:</label>
+                                <textarea class="materialize-textarea" name="address" id="address" placeholder="Street Name - 13a" cols="45" rows="2"></textarea>
+                            </div>
 
-                <p></p>
+                            <div class="input-field">
+                                <label for="postcode">Zip Code:</label>
+                                <input type="number" id="postcode" name="postcode" title="Swedish Postal Code">
+                            </div>
+    
+                            <button class="btn-flat waves-effect" type="submit" name="submit" onclick="thankyou()">Register</button>
+    
+                        </form>
+                </div>
+            </div>
+            </section>
 
-                <label for="address">Address:</label>
-                <textarea name="address" id= "address" placeholder= "Street Name - 13a" cols="45" rows="2" ></textarea >
-
-                <p></p>
-                <label for="postcode">Zip Code:</label>
-                <input type = "number" id="postcode" name ="postcode"  title ="Swedish Postal Code"> 
-              
-                <p>
-                <input type="submit" name="submit" value="Become Member" onclick="thankyou()">  
-                </p>
-
-                </form> 
-           </div> 
-            
-        </section>
-
-    </div>
-    <footer>
-        <table id="tablefooter">
-            <tr>
-                <td class="leftfooter">
-                    <h3>Policy/Privacy</h3>
-                    <p>GDPR *NEW*</p>
-                    <p>Shipment/Delivery</p>
-                    <p>Return Policy</p>
-                    <p>F.A.Q</p>
-                </td>
-                <td class="middlefooter">
-                    <h3>Register</h3>
-                    <p>Become a Member</p>
-                    <p>Monthly Sale</p>
-                    <p>Discount disclaimer</p>
-                    <p>Promotional Codes</p>
-                </td>
-                <td class="rightfooter">
-                    <h3>Contact Us</h3>
-                    <p>Sponsors</p>
-                    <P>Partnership</P>
-                    <p>Customer Service</p>
-                    <p>Support</p>
-                </td>
-            </tr>
-        </table>
-             
-        <p class="dev">Web Developer Dalton Ramiro</p>   
-    </footer>
+        </div>
+        <footer class="page-footer deep-orange darken-2">
+            <div style="display: flex; justify-content: space-between; align-items: center; justify-items: center; padding: 0.5rem;"
+                class="container">
+                <div class="card grey darken-3" style="flex: auto; margin: 0;">
+                    <div class="card-content">
+                        <span class="card-title white-text">Legal</span>
+                        <ul>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">GDPR *NEW*</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Shipment/Delivery</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Return Policy</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">F.A.Q</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card grey darken-3" style="flex: auto; margin: 0 0.5rem 0 0.5rem;">
+                    <div class="card-content">
+                        <span class="card-title white-text">Registration</span>
+                        <ul>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Become a Member</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Monthly Sale</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Discount disclaimer</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Promotional Codes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card grey darken-3" style="flex: auto; margin: 0;">
+                    <div class="card-content">
+                        <span class="card-title white-text">Other</span>
+                        <ul>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Sponsors</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Partnership</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Customer Service</a>
+                            </li>
+                            <li>
+                                <a class="deep-orange-text text-lighten-2" href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright grey darken-4" style="display: flex; justify-content: center; align-items: center;">
+                <span class="grey-text">© 2017 Dalton Ramiro</span>
+            </div>
+        </footer>
 
     </div>
     <!-- The following script is to validate the from old style, since nowdays we can use the automatic options adding "requerid" but not bad to hardcoded the prequisits sometimes-->
     <script>
-        function validateForm ()
-        { 
-           
+        function validateForm() {
+
             var formname = document.forms["form"]["name"].value;
-            if (formname == "") 
-            {
+            if (formname == "") {
                 alert("Name must be filled out");
                 return false;
             }
 
             var formpsnumber = document.forms["form"]["person"].value;
-            if (formpsnumber.length != "12") 
-            {
+            if (formpsnumber.length != "12") {
                 alert("Type all 12 digits of your personal number");
                 return false;
             }
@@ -187,42 +245,37 @@
             var userpassword = document.forms["form"]["password"].value;
             var retype = document.forms["form"]["repassword"].value;
             // the idea here is to be able to have a password of 6 up to 12 numbers and letters, and the retype is a verification of the password is matching.
-            if (userpassword.length < "6" || userpassword.length > "12") 
-            {
+            if (userpassword.length < "6" || userpassword.length > "12") {
                 alert("Please create a  descent password");
                 return false;
-            }
-            else if(retype != userpassword)
-            {
+            } else if (retype != userpassword) {
                 alert("Password must be the same");
                 return false;
             }
             //Here will have 2 factors of verification tooo, one is if have the @ and the other if come with the host before the ".com"
             var usermail = document.forms["form"]["email"].value;
-            var atpos= usermail.indexOf("@");
-            var dotpos= usermail.lastIndexOf(".com");
-            if (atpos <1 || dotpos <atpos + 2 || dotpos + 2>= usermail.length)
-            {
+            var atpos = usermail.indexOf("@");
+            var dotpos = usermail.lastIndexOf(".com");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= usermail.length) {
                 alert("Enter correct email!");
                 return false;
             }
 
-            var useraddress= document.forms["form"]["address"].value;
-            if (useraddress == "") 
-            {
+            var useraddress = document.forms["form"]["address"].value;
+            if (useraddress == "") {
                 alert("An Address for delivery its Necessary!");
                 return false;
             }
 
             var userpostcode = document.forms["form"]["postcode"].value;
-            if (userpostcode == "") 
-            {
+            if (userpostcode == "") {
                 alert("A post code is necessary to verify you Adress!");
                 return false;
-            } 
-                 
-        }    
-   
+            }
+
+        }
     </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
