@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+
+    <title>
+        Registration
+    </title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="logo">
+            
+        </header>
+    <div class="sidenav">
+        <!-- for the side bar ,just plain text ,relative to the images (menu inside menu, drop down action) -->
+        <button class="dropbtn">Computer</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropbtn">Console</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropbtn">Mobile </button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropbtn">Appealing</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropbtn">Hats/Caps</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        
+        <button class="dropbtn">Cosplay </button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropbtn">Colectibles</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropbtn">Tv-Series and HQ</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropbtn">Gaming Decorations</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>             
+        
+    </div>    
+    <div id="maincontent">
+        <!-- the menu here to go mainpage, register, contact, FAQ -->
+        <div class="topnav">
+            <a href="#news.html">News/Events</a>
+            <a href="home.html">Store</a>
+            <a class="active" href="register.html">Become a member</a>
+            <a href="#contact">Contact Us!</a>
+            <a href="calculator.html">Calculator</a>
+        </div>
+        <!-- Here will be my main content display,i guess I will have to break it down in small php to make it happen-->
+        <section id="container">
+           
+            <!-- The formulary is the same I submited before , I only added new fields that was necessary for the person nummer and zip post , also deactive the automatic validatation 
+            Removind the "required" -->
+            <h3>Be a Member!</h3>
+
+            <div id ="formulary">
+                <form name= "form" onsubmit="return validateForm();" method="post" action="register.html"> 
+                                      
+                
+                <label for="name">Full Name:</label>
+                <input name="name" type="text" id="name" placeholder="Your name"  >
+                <p></p>
+                <!-- I left some space for the 12 digits of the PN but some cases people use only 10 , I will try to make it possible on the validation,but i use 15 spaces in case some ppl use the "/" or spaces -->
+                <label for="person">Personal Number:</label>
+                <input name="person" type="number" id="person" maxsize="15" placeholder="YYYY/MM/DD/XXXX"  >
+                <p></p>
+                <label for="password">Password:</label>
+                <input name="password" type="password" id="password" placeholder="Password">
+                <input name="repassword" type="password" id="repassword" placeholder="re-type Password">
+                         
+                <p></p>
+
+                <label for="email">Email:</label>
+                <input name= "email" type="email" id="email" placeholder="Your Email@host.com" >
+                <p></p>
+                <label for="phone">Phone:</label>
+                <input type="number" placeholder="Mobile Number" id="phone" name="phone" >
+
+                <p></p>
+
+                <label for="address">Address:</label>
+                <textarea name="address" id= "address" placeholder= "Street Name - 13a" cols="45" rows="2" ></textarea >
+
+                <p></p>
+                <label for="postcode">Zip Code:</label>
+                <input type = "number" id="postcode" name ="postcode"  title ="Swedish Postal Code"> 
+              
+                <p>
+                <input type="submit" name="submit" value="Become Member" onclick="thankyou()">  
+                </p>
+
+                </form> 
+           </div> 
+            
+        </section>
+
+    </div>
+    <footer>
+        <table id="tablefooter">
+            <tr>
+                <td class="leftfooter">
+                    <h3>Policy/Privacy</h3>
+                    <p>GDPR *NEW*</p>
+                    <p>Shipment/Delivery</p>
+                    <p>Return Policy</p>
+                    <p>F.A.Q</p>
+                </td>
+                <td class="middlefooter">
+                    <h3>Register</h3>
+                    <p>Become a Member</p>
+                    <p>Monthly Sale</p>
+                    <p>Discount disclaimer</p>
+                    <p>Promotional Codes</p>
+                </td>
+                <td class="rightfooter">
+                    <h3>Contact Us</h3>
+                    <p>Sponsors</p>
+                    <P>Partnership</P>
+                    <p>Customer Service</p>
+                    <p>Support</p>
+                </td>
+            </tr>
+        </table>
+             
+        <p class="dev">Web Developer Dalton Ramiro</p>   
+    </footer>
+
+    </div>
+    <!-- The following script is to validate the from old style, since nowdays we can use the automatic options adding "requerid" but not bad to hardcoded the prequisits sometimes-->
+    <script>
+        function validateForm ()
+        { 
+           
+            var formname = document.forms["form"]["name"].value;
+            if (formname == "") 
+            {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            var formpsnumber = document.forms["form"]["person"].value;
+            if (formpsnumber.length != "12") 
+            {
+                alert("Type all 12 digits of your personal number");
+                return false;
+            }
+
+            var userpassword = document.forms["form"]["password"].value;
+            var retype = document.forms["form"]["repassword"].value;
+            // the idea here is to be able to have a password of 6 up to 12 numbers and letters, and the retype is a verification of the password is matching.
+            if (userpassword.length < "6" || userpassword.length > "12") 
+            {
+                alert("Please create a  descent password");
+                return false;
+            }
+            else if(retype != userpassword)
+            {
+                alert("Password must be the same");
+                return false;
+            }
+            //Here will have 2 factors of verification tooo, one is if have the @ and the other if come with the host before the ".com"
+            var usermail = document.forms["form"]["email"].value;
+            var atpos= usermail.indexOf("@");
+            var dotpos= usermail.lastIndexOf(".com");
+            if (atpos <1 || dotpos <atpos + 2 || dotpos + 2>= usermail.length)
+            {
+                alert("Enter correct email!");
+                return false;
+            }
+
+            var useraddress= document.forms["form"]["address"].value;
+            if (useraddress == "") 
+            {
+                alert("An Address for delivery its Necessary!");
+                return false;
+            }
+
+            var userpostcode = document.forms["form"]["postcode"].value;
+            if (userpostcode == "") 
+            {
+                alert("A post code is necessary to verify you Adress!");
+                return false;
+            } 
+                 
+        }    
+   
+    </script>
+</body>
+</html>
